@@ -28,14 +28,12 @@ export default function Product({ product }) {
           <span className="font-bold text-lg">от {price}₽</span>
           <Button text="Заказать" onClick={() => openModal()} />
         </div>
-        <div className="relative h-[400px] w-[300px] ">
-          <Image
-            src={`${process.env.NEXT_PUBLIC_SERVER_URL}${image.data.attributes.url}`}
-            alt={name}
-            objectFit="cover"
-            layout="fill"
-          />
-        </div>
+
+        <img
+          src={`${process.env.NEXT_PUBLIC_SERVER_URL}${image.data.attributes.url}`}
+          alt={name}
+          className="h-[400px] w-[300px] object-cover"
+        />
       </div>
     </div>
   );
