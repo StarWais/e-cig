@@ -1,0 +1,27 @@
+name: Push stack to heroku
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Release api
+        uses: akhileshns/heroku-deploy@v3.0.4
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_email: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: ecig-backend
+        env:
+          HD_APP_BASE: server
+          HD_API_TOKEN_SALT: d23439af18c6f0f1cb846aac9f5ac2aa
+          HD_JWT_SECRET: a4fef9ed-c209-4f39-a23a-be73b48beea2
+      - name: Release frontend
+        uses: akhileshns/heroku-deploy@v3.0.4
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_email: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: ecig-frontend
+        env:
+          HD_APP_BASE: client
