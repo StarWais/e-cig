@@ -16,7 +16,9 @@ jobs:
         env:
           HD_APP_BASE: server
           HD_API_TOKEN_SALT: d23439af18c6f0f1cb846aac9f5ac2aa
+          HD_MY_HEROKU_URL: https://ecig-backend.herokuapp.com
           HD_JWT_SECRET: a4fef9ed-c209-4f39-a23a-be73b48beea2
+          HD_NODE_ENV: production
       - name: Release frontend
         uses: akhileshns/heroku-deploy@v3.0.4
         with:
@@ -25,3 +27,4 @@ jobs:
           heroku_app_name: ecig-frontend
         env:
           HD_APP_BASE: client
+          HD_NEXT_PUBLIC_SERVER_URL: https://ecig-backend.herokuapp.com

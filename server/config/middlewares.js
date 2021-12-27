@@ -13,8 +13,9 @@ module.exports = [
       origin: [
         "http://localhost:3000",
         "http://localhost:1337",
-        "https://ecig-backend.herokuapp.com/",
-        "https://ecig-frontend.herokuapp.com/",
+        "https://ecig-backend.herokuapp.com",
+        "https://ecig-frontend.herokuapp.com",
+        "http://ecig-frontend.herokuapp.com",
       ],
     },
   },
