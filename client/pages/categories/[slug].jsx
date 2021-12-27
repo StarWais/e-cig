@@ -33,6 +33,7 @@ export async function getStaticProps({ params }) {
         products: products.data,
         name,
       },
+      revalidate: 10,
     };
   }
   return {
