@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply max-w-6xl mx-auto px-6 lg:px-0;
+  }
+}
+
+#__next {
+  min-height: 100vh;
+  background: #09102c;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  margin: 8em 0 8em 0;
+}

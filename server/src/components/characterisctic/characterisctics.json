@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_characterisctic_characterisctics",
+  "info": {
+    "displayName": "Characterisctics",
+    "icon": "question-circle",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

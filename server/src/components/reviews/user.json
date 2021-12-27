@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_reviews_users",
+  "info": {
+    "displayName": "User",
+    "icon": "user",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "surname": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
