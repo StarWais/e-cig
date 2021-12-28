@@ -27,14 +27,6 @@
       "target": "api::category.category",
       "inversedBy": "products"
     },
-    "image": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
-      "allowedTypes": [
-        "images"
-      ]
-    },
     "price": {
       "type": "integer",
       "required": true
@@ -48,6 +40,14 @@
     "slug": {
       "type": "string",
       "default": "Не нужно заполнять"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }
