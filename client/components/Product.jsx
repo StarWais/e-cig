@@ -29,6 +29,14 @@ export default function Product({ product }) {
           <Button text="Заказать" onClick={() => openModal()} />
         </div>
 
+        <div className="relative h-[400px] w-[300px]">
+          <Image
+            src={`${image.data.attributes.url}`}
+            alt={name}
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
         <img
           src={`${process.env.NEXT_PUBLIC_SERVER_URL}${image.data.attributes.url}`}
           alt={name}

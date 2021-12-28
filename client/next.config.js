@@ -5,6 +5,7 @@ module.exports = {
       'localhost',
       'https://ecig-backend.herokuapp.com/',
       'http://ecig-backend.herokuapp.com',
+      'res.cloudinary.com',
     ],
   },
   eslint: {
