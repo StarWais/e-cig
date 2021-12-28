@@ -37,11 +37,6 @@ export default function Product({ product }) {
             objectFit="cover"
           />
         </div>
-        <img
-          src={`${process.env.NEXT_PUBLIC_SERVER_URL}${image.data.attributes.url}`}
-          alt={name}
-          className="h-[400px] w-[300px] object-cover"
-        />
       </div>
     </div>
   );

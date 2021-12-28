@@ -19,9 +19,9 @@ jobs:
           HD_MY_HEROKU_URL: https://ecig-backend.herokuapp.com
           HD_JWT_SECRET: a4fef9ed-c209-4f39-a23a-be73b48beea2
           HD_NODE_ENV: production
-          CLOUDINARY_NAME: dvoxrlidk
-          CLOUDINARY_KEY: 994595817536573
-          CLODINARY_SECRET: v_rbKbYlvXzzXTRyS_QKCRvdE_I
+          HD_CLOUDINARY_NAME: dvoxrlidk
+          HD_CLOUDINARY_KEY: 994595817536573
+          HD_CLODINARY_SECRET: v_rbKbYlvXzzXTRyS_QKCRvdE_I
       - name: Release frontend
         uses: akhileshns/heroku-deploy@v3.0.4
         with:
