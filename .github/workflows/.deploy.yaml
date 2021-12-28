@@ -21,7 +21,7 @@ jobs:
           HD_NODE_ENV: production
           HD_CLOUDINARY_NAME: dvoxrlidk
           HD_CLOUDINARY_KEY: 994595817536573
-          HD_CLODINARY_SECRET: v_rbKbYlvXzzXTRyS_QKCRvdE_I
+          HD_CLOUDINARY_SECRET: v_rbKbYlvXzzXTRyS_QKCRvdE_I
       - name: Release frontend
         uses: akhileshns/heroku-deploy@v3.0.4
         with:
